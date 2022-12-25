@@ -1,0 +1,322 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+.main-page {
+  background: linear-gradient(270.1deg, #a5deff 0.09%, #fcfeff 99.92%);
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  margin-top: 34px;
+  margin-bottom: 58px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo-text {
+  margin-left: 18px;
+  width: 165px;
+}
+.logo-goit {
+  transition: transform 250ms linear;
+}
+.logo-goit:hover {
+  transform: scale(1.2);
+}
+.banderogus-container {
+  background: #ffffff;
+  padding: 60px 56px;
+  width: 520px;
+  align-self: center;
+}
+.banderogus-greeting {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.banderogus-start-text {
+  color: #ff6b0a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 48px;
+}
+.banderogus-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+}
+.banderogus-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.banderogus-launch {
+  background: #ff6b0a;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.main-page-row {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 1170px;
+  margin: 0 auto;
+}
+.ukr-logo {
+  transition: transform 250ms linear;
+}
+.ukr-logo:hover {
+  transform: scale(1.2);
+}
+/* ========================= */
+.gus-facts {
+  padding-top: 52px;
+  padding-right: 0;
+  padding-bottom: 72px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gus-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100px;
+  color: #1b1d1f;
+  margin: 16px 0;
+}
+.gus-desrc {
+  width: 875px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+}
+.gus-facts-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+.gus-fact-item {
+  width: 33%;
+  margin-right: 10px;
+}
+.gus-fact-item:hover .gus-fact-img {
+  width: 103%;
+  rotate: -5deg;
+}
+.gus-fact-img {
+  width: 100%;
+  rotate: 0deg;
+}
+.gus-fact-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1b1d1f;
+  margin: 12px 0 32px 0;
+}
+.gus-fact-descr {
+  width: 280px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1d1f;
+}
+
+/* ============================ */
+.victory-footer {
+  display: flex;
+  justify-content: center;
+}
+.victory-bgd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1170px;
+  padding: 72px 0;
+  margin-bottom: 72px;
+  background: linear-gradient(270.1deg, #d3efff 0.09%, #ffffff 99.92%);
+}
+.gus-kus {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.victory-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100px;
+  margin: 16px 0;
+  color: #1b1d1f;
+  animation-name: changeShadow;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes changeShadow {
+  0% {
+    text-shadow: none;
+    box-shadow: #f2cd13;
+  }
+  50% {
+    text-shadow: 5px 2px 5px rgba(150, 150, 150, 1);
+    box-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+    box-shadow: #f2cd13;
+  }
+}
+.victory-desrc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 875px;
+  color: #1b1d1f;
+}
+/* ========================= */
+.modal-bgd {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(27, 29, 31, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.modal-form-container {
+  background: #ffffff;
+  padding: 32px 60px 92px 60px;
+  position: relative;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 14px;
+  color: #1b1d1f;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.modal-form-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+  margin: 32px 0 12px 0;
+}
+.modal-form-desrc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.modal-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.modal-field-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #000000;
+}
+.modal-field-input {
+  background: #ffffff;
+  border: 1px solid #005bbb;
+  border-radius: 8px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 4px 8px;
+}
+.modal-form-btn {
+  background: #ff6b0a;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.modal-form-success {
+  background: #d5f0ff;
+  padding: 32px 60px 92px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 300px;
+}
+.gus-active {
+  position: absolute;
+  bottom: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
